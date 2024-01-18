@@ -1,4 +1,4 @@
-#include "monty"
+#include "monty.h"
 
 /**
  * f_pstr - Prints the string starting from the top
@@ -10,7 +10,7 @@
 void f_pstr(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
-	(void)coounter;
+	(void)counter;
 
 	h = *head;
 	while (h)
@@ -22,5 +22,5 @@ void f_pstr(stack_t **head, unsigned int counter)
 		printf("%c", h->n);
 		h = h->next;
 	}
-	pritnf("\n");
+	printf("\n");
 }
